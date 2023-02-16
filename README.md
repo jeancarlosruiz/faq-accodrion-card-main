@@ -16,8 +16,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/jeancarlosruiz/faq-accodrion-card-main)
+- Live Site URL: [Faq-Accordion-Card-Main](https://jeancarlosruiz.github.io/faq-accodrion-card-main/)
 
 ## My process
 
