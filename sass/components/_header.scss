@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.header {
+  padding-block-start: size(84);
+
+  h1 {
+    text-align: center;
+  }
+
+  @include mq(medium) {
+    padding-block-start: 0;
+
+    h1 {
+      text-align: start;
+    }
+  }
+}

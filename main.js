@@ -1,39 +1,28 @@
 'use strict';
+// Understanding the problem
+// Hide/Show the answer to a question when the question is clicked
+// Hacer el logo que cuando le des click, se cierren o habran todos las preguntas.
+
 /////////////////////////
 // SELECTING ELEMENTS //
 ///////////////////////
 
-// Hamburger elements
-const hamburgerBtn = document.querySelector('.hamburger-btn');
-const headerNav = document.querySelector('.header-nav');
-const overlay = document.querySelector('.overlay');
-
-//////////////////////////////////////
-// FUNCTIONS TO DO NOT REPEAT CODE //
-////////////////////////////////////
-
-// Hamburger function
-const toggleClasses = function () {
-  hamburgerBtn.classList.toggle('active');
-  headerNav.classList.toggle('open');
-  overlay.classList.toggle('hidden');
-};
+const questions = document.querySelectorAll('.button');
+const answers = document.querySelectorAll('.answer');
+const titles = document.querySelectorAll('.title');
+const arrows = document.querySelectorAll('.arrow');
 
 /////////////////////////////
 // ADDEVENT FUNCTIONALITIES //
 ///////////////////////////
 
-// Hamburger function
-hamburgerBtn.addEventListener('click', () => {
-  toggleClasses();
-});
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && hamburgerBtn.classList.contains('active')) {
-    toggleClasses();
-  }
-});
-
-overlay.addEventListener('click', () => {
-  toggleClasses();
+questions.forEach((question, index) => {
+  question.addEventListener('click', () => {
+    let answer = answers[index].classList;
+    let title = titles[index].classList;
+    let arrow = arrows[index].classList;
+    answer.toggle('hidden');
+    title.toggle('bold');
+    arrow.toggle('active');
+  });
 });

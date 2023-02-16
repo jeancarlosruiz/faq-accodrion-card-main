@@ -2,13 +2,42 @@
 
 $colors: (
   neutral: (
-    900: #212121,
-    400: #5c5c5c,
-    200: #f8f8f8,
+    900: hsl(238, 29%, 16%),
+    500: hsl(237, 12%, 33%),
+    400: hsl(240, 6%, 50%),
+    300: hsl(240, 5%, 91%),
+    200: hsl(14, 88%, 65%),
     100: #ffffff,
   ),
   primary: (
-    400: #ff6635,
-    500: #dd4e11,
+    400: hsl(273, 75%, 66%),
+    500: hsl(240, 73%, 65%),
   ),
 );
+
+// ## Colors
+
+// ### Primary
+
+// #### Text
+
+// - Very dark desaturated blue: hsl(238, 29%, 16%)
+// - Soft red: hsl(14, 88%, 65%)
+
+// #### Gradient
+
+// Background gradient:
+
+// - Soft violet: hsl(273, 75%, 66%)
+// - Soft blue: hsl(240, 73%, 65%)
+
+// ### Neutral
+
+// #### Text
+
+// - Very dark grayish blue: hsl(237, 12%, 33%)
+// - Dark grayish blue: hsl(240, 6%, 50%)
+
+// #### Dividers
+
+// - Light grayish blue: hsl(240, 5%, 91%)

@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+
+.questions-list {
+  margin-block-start: size(30);
+
+  .wrapper {
+    border-bottom: 1px solid clr(neutral, 300);
+    padding-block-end: size(20);
+
+    &:not(:first-of-type) {
+      padding-block-start: size(20);
+    }
+  }
+
+  .title {
+    font-size: fs(300);
+
+    @include mq(medium) {
+      font-size: fs(400);
+    }
+  }
+
+  .answer {
+    margin-block-start: size(12);
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

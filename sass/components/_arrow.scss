@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+.arrow {
+  transition: 275ms ease;
+}
+
+.active {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,54 @@
+@use '../abstracts/' as *;
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 0;
+  padding-inline: size(24);
+  padding-block: size(48);
+  background: url(/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 80%;
+
+  .illustration-picture {
+    position: relative;
+
+    .illustration-women {
+      position: absolute;
+      transform: translateY(-80%);
+    }
+
+    .illustration-box {
+      display: none;
+    }
+  }
+
+  @include mq(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: size(88);
+    padding-inline: size(95);
+    padding-block-start: size(65);
+    padding-block-end: size(82);
+    background: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 20% right 300%;
+    background-size: 80%;
+
+    .illustration-picture {
+      position: relative;
+
+      .illustration-women {
+        transform: translateX(-35%);
+      }
+
+      .illustration-box {
+        display: block;
+        position: absolute;
+        transform: translate(-100%, 70%);
+      }
+    }
+  }
+}
